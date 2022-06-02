@@ -27,6 +27,14 @@ public class Utils {
 			return null;
 		}
 	}
+	
+	public static Double tryParseToDouble(String str) {
+		try {
+			return Double.parseDouble(str);
+		} catch (NumberFormatException e) {
+			return null;
+		}
+	}
 
 	// font:
 	// https://stackoverflow.com/questions/47484280/format-of-date-in-the-javafx-tableview
